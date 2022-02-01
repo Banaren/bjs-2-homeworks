@@ -19,7 +19,7 @@ function getArrayParams(arr) {
   }
 
   //// Задание 2
-  const w = function (arr) {
+  const worker = function (arr) {
   let sum = 0;
 
     for (let i = 0; i < arr.length; i++) {
@@ -39,7 +39,6 @@ function getArrayParams(arr) {
     }
     return max;
   }
-  makeWork(arrOfArr, w)
 
   // Задание 3
   function worker2(arr) {
