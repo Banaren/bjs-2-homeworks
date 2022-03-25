@@ -14,11 +14,10 @@ function cachingDecoratorNew() {
   }
 }
 
+
 function debounceDecoratorNew(f, ms) {
   let isCooldown = false;
-
   return function wrapper() {
-
     if (isCooldown) return;
     f.apply(this, null);
     isCooldown = true;
@@ -30,10 +29,8 @@ function debounceDecoratorNew(f, ms) {
 function debounceDecorator2(f, ms) {
   let isCooldown = false;
   let count = 1;
-
   return function wrapper() {
     console.log('Было произведено ' + count++ + ' вызов(а)(ов)');
-    
     if (isCooldown) return;
     f.apply(this, null);
     isCooldown = true;
